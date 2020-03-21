@@ -64,9 +64,9 @@ int main(int argc, char ** argv)
 	{
 		// initialize geometry_msgs::Twist
 		geometry_msgs::Twist vel_msg;
-		speed += 0.05;
+		speed += 0.01;
 		vel_msg.linear.x = speed;
-		vel_msg.angular.z = 0.2;
+		vel_msg.angular.z = 0.5;
 
 		// publish message
 		turtle_vel_pub.publish(vel_msg);
